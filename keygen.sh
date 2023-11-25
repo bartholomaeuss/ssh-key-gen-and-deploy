@@ -21,7 +21,7 @@ main(){
     then
       exit 1
     fi
-    echo "$HOSTNAME::$HOME/.ssh/$file.pub was appended to $remote::~/.ssh/authorized_keys."
+    echo "$USERNAME@$HOSTNAME:$HOME/.ssh/$file.pub was appended to $user@$remote:~/.ssh/authorized_keys."
     exit 0
 }
 
